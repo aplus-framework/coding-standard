@@ -1,11 +1,11 @@
 {
 	"name": "framework/coding-standard",
 	"type": "library",
-	"description": "The Coding Standard package",
+	"description": "The Framework Coding Standard Library",
 	"keywords": [
 		"coding-standard"
 	],
-	"homepage": "https://gitlab.com/the-framework/coding-standard",
+	"homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
 	"license": "proprietary",
 	"authors": [
 		{
@@ -46,9 +46,9 @@
 	},
 	"support": {
 		"email": "natanfelles@gmail.com",
-		"issues": "https://gitlab.com/the-framework/coding-standard/issues",
-		"wiki": "https://gitlab.com/the-framework/packages/coding-standard",
-		"source": "https://gitlab.com/the-framework/coding-standard",
-		"docs": "https://the-framework.gitlab.io/the-framework/packages/coding-standard/api"
+		"issues": "https://gitlab.com/the-framework/libraries/coding-standard/issues",
+		"wiki": "https://gitlab.com/the-framework/libraries/coding-standard/wikis/home",
+		"source": "https://gitlab.com/the-framework/libraries/coding-standard",
+		"docs": "https://the-framework.gitlab.io/libraries/coding-standard/docs/"
 	}
 }
