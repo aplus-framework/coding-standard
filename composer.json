@@ -6,7 +6,7 @@
 		"coding-standard"
 	],
 	"homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
-	"license": "proprietary",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Natan Felles",
