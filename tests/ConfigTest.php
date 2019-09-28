@@ -22,4 +22,27 @@ class ConfigTest extends TestCase
 			$this->config->getRules()
 		);
 	}
+
+	public function testHeaderComment()
+	{
+		$this->assertTrue(
+			empty($this->config->getRules()['header_comment']['header'])
+		);
+		$this->config->setHeaderComment('ABC');
+		$this->assertEquals(
+			'ABC',
+			$this->config->getRules()['header_comment']['header']
+		);
+	}
+
+	public function testDefaultHeaderComment()
+	{
+		$this->assertTrue(
+			empty($this->config->getRules()['header_comment'])
+		);
+		$this->config->setDefaultHeaderComment();
+		$this->assertFalse(
+			empty($this->config->getRules()['header_comment'])
+		);
+	}
 }
