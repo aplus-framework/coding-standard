@@ -9,4 +9,5 @@ documentation.md export-ignore
 phpdoc.dist.xml export-ignore
 phpmd.xml export-ignore
 phpstan.neon.dist export-ignore
+phpstorm.xml export-ignore
 phpunit.xml.dist export-ignore
