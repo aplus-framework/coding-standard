@@ -8,6 +8,7 @@ class Config extends \PhpCsFixer\Config
 		$this->setRiskyAllowed(true);
 		$this->setIndent("\t");
 		$this->setLineEnding("\n");
+		$this->setUsingCache(false);
 		$this->prepareRules();
 	}
 
