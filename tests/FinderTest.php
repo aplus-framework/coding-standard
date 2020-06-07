@@ -1,4 +1,4 @@
-<?php namespace Tests\Sample;
+<?php namespace Tests\CodingStandard;
 
 use Framework\CodingStandard\Finder;
 use PHPUnit\Framework\TestCase;

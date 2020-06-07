@@ -1,14 +1,11 @@
-<?php namespace Tests\Sample;
+<?php namespace Tests\CodingStandard;
 
 use Framework\CodingStandard\Config;
 use PHPUnit\Framework\TestCase;
 
 class ConfigTest extends TestCase
 {
-	/**
-	 * @var Config
-	 */
-	protected $config;
+	protected Config $config;
 
 	public function setup() : void
 	{
