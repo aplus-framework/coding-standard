@@ -14,7 +14,7 @@ class ConfigTest extends TestCase
 
 	public function testCustomRules()
 	{
-		$this->assertContains(
+		$this->assertContainsEquals(
 			['array_indentation' => false],
 			$this->config->getRules()
 		);
