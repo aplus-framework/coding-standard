@@ -14,8 +14,8 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4",
-		"friendsofphp/php-cs-fixer": "^2.16"
+		"php": ">=8.0",
+		"friendsofphp/php-cs-fixer": "^2.18"
 	},
 	"require-dev": {
 		"ext-xdebug": "*",
