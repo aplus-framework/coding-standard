@@ -15,14 +15,14 @@
 	],
 	"require": {
 		"php": ">=8.0",
-		"friendsofphp/php-cs-fixer": "^2.18"
+		"friendsofphp/php-cs-fixer": "^2.19"
 	},
 	"require-dev": {
 		"ext-xdebug": "*",
-		"ergebnis/composer-normalize": "^2.0",
-		"phpmd/phpmd": "^2.9",
+		"ergebnis/composer-normalize": "^2.13",
+		"phpmd/phpmd": "^2.10",
 		"phpstan/phpstan": "^0.12",
-		"phpunit/phpunit": "^9.3"
+		"phpunit/phpunit": "^9.5"
 	},
 	"autoload": {
 		"psr-4": {
