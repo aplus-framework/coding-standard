@@ -36,7 +36,7 @@ class Config extends \PhpCsFixer\Config
 			],
 			'class_attributes_separation' => [
 				'elements' => [
-					'method',
+					'method' => 'one',
 				],
 			],
 			'class_definition' => [
