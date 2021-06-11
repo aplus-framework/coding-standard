@@ -12,7 +12,7 @@ class ConfigTest extends TestCase
 		$this->config = new Config();
 	}
 
-	public function testCustomRules()
+	public function testCustomRules() : void
 	{
 		$this->assertContainsEquals(
 			['array_indentation' => false],
@@ -20,26 +20,22 @@ class ConfigTest extends TestCase
 		);
 	}
 
-	public function testHeaderComment()
+	public function testHeaderComment() : void
 	{
 		$this->assertTrue(
 			empty($this->config->getRules()['header_comment']['header'])
 		);
 		$this->config->setHeaderComment('ABC');
-		$this->assertEquals(
+		$this->assertSame(
 			'ABC',
 			$this->config->getRules()['header_comment']['header']
 		);
 	}
 
-	public function testDefaultHeaderComment()
+	public function testDefaultHeaderComment() : void
 	{
-		$this->assertTrue(
-			empty($this->config->getRules()['header_comment'])
-		);
+		$this->assertArrayNotHasKey('header_comment', $this->config->getRules());
 		$this->config->setDefaultHeaderComment();
-		$this->assertFalse(
-			empty($this->config->getRules()['header_comment'])
-		);
+		$this->assertArrayHasKey('header_comment', $this->config->getRules());
 	}
 }

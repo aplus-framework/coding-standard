@@ -2,7 +2,7 @@
 
 class Config extends \PhpCsFixer\Config
 {
-	public function __construct(...$params)
+	public function __construct(mixed ...$params)
 	{
 		parent::__construct(...$params);
 		$this->setRiskyAllowed(true);
@@ -12,7 +12,7 @@ class Config extends \PhpCsFixer\Config
 		$this->prepareRules();
 	}
 
-	protected function prepareRules()
+	protected function prepareRules() : void
 	{
 		$this->setRules([
 			'array_indentation' => false,
@@ -265,12 +265,22 @@ class Config extends \PhpCsFixer\Config
 		]);
 	}
 
+	/**
+	 * @param array<string,mixed> $rules
+	 *
+	 * @return $this
+	 */
 	public function replaceRules(array $rules)
 	{
 		$this->setRules(\array_replace_recursive($this->getRules(), $rules));
 		return $this;
 	}
 
+	/**
+	 * @param string $header
+	 *
+	 * @return $this
+	 */
 	public function setHeaderComment(string $header)
 	{
 		$this->replaceRules([
@@ -283,6 +293,9 @@ class Config extends \PhpCsFixer\Config
 		return $this;
 	}
 
+	/**
+	 * @return $this
+	 */
 	public function setDefaultHeaderComment()
 	{
 		$year = \date('Y');

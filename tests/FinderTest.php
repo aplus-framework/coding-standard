@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 class FinderTest extends TestCase
 {
-	public function testInstance()
+	public function testInstance() : void
 	{
 		$this->assertInstanceOf(Finder::class, Finder::create());
 	}
