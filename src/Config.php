@@ -87,8 +87,8 @@ class Config extends \PhpCsFixer\Config
 				 'header'      => $header,
 				 'location'    => 'after_open',
 			 ],*/
-			'heredoc_indentation' => false,
-			'heredoc_to_nowdoc' => false,
+			'heredoc_indentation' => true,
+			'heredoc_to_nowdoc' => true,
 			'implode_call' => false,
 			'include' => true,
 			'increment_style' => false,
@@ -287,8 +287,8 @@ class Config extends \PhpCsFixer\Config
 	{
 		$year = \date('Y');
 		$header = <<<EOF
-Copyright (C) 2018-{$year} Natan Felles <natanfelles@gmail.com>
-EOF;
+			Copyright (C) 2018-{$year} Natan Felles <natanfelles@gmail.com>
+			EOF;
 		$this->setHeaderComment($header);
 		return $this;
 	}
