@@ -60,7 +60,9 @@ class Config extends \PhpCsFixer\Config
 			],
 			'declare_strict_types' => false,
 			'dir_constant' => true,
-			'echo_tag_syntax' => false,
+			'echo_tag_syntax' => [
+				'format' => 'short',
+			],
 			'elseif' => true,
 			'encoding' => true,
 			'ereg_to_preg' => true,
