@@ -15,6 +15,7 @@ class Config extends \PhpCsFixer\Config
 	protected function prepareRules() : void
 	{
 		$this->setRules([
+			'align_multiline_comment' => true,
 			'array_indentation' => false,
 			'array_syntax' => [
 				'syntax' => 'short',
@@ -201,13 +202,14 @@ class Config extends \PhpCsFixer\Config
 			'ordered_imports' => true,
 			'php_unit_construct' => true,
 			'phpdoc_add_missing_param_annotation' => true,
-			'phpdoc_align' => true,
+			'phpdoc_align' => ['align' => 'left'],
 			'phpdoc_annotation_without_dot' => true,
 			'phpdoc_indent' => true,
 			'phpdoc_inline_tag_normalizer' => true,
+			'phpdoc_line_span' => true,
 			'phpdoc_no_access' => true,
 			'phpdoc_no_alias_tag' => ['replacements' => ['type' => 'var', 'link' => 'see']],
-			'phpdoc_no_empty_return' => true,
+			'phpdoc_no_empty_return' => false,
 			'phpdoc_no_package' => true,
 			'phpdoc_no_useless_inheritdoc' => true,
 			'phpdoc_order' => true,
