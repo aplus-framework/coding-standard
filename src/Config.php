@@ -202,7 +202,7 @@ class Config extends \PhpCsFixer\Config
 			'ordered_imports' => true,
 			'php_unit_construct' => true,
 			'phpdoc_add_missing_param_annotation' => true,
-			'phpdoc_align' => ['align' => 'left'],
+			'phpdoc_align' => false,
 			'phpdoc_annotation_without_dot' => true,
 			'phpdoc_indent' => true,
 			'phpdoc_inline_tag_normalizer' => true,
