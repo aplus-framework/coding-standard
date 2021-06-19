@@ -49,7 +49,7 @@ class Config extends \PhpCsFixer\Config
 			'combine_consecutive_issets' => true,
 			'combine_consecutive_unsets' => true,
 			'combine_nested_dirname' => false,
-			'comment_to_phpdoc' => true,
+			'comment_to_phpdoc' => false,
 			'compact_nullable_typehint' => true,
 			'concat_space' => [
 				'spacing' => 'one',
