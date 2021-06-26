@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 /*
  * This file is part of The Framework Coding Standard Library.
  *
@@ -66,7 +66,7 @@ class Config extends \PhpCsFixer\Config
 			'constant_case' => true,
 			'date_time_immutable' => false,
 			'declare_equal_normalize' => [
-				'space' => 'single',
+				'space' => 'none',
 			],
 			'declare_strict_types' => false,
 			'dir_constant' => true,
