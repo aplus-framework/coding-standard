@@ -282,20 +282,15 @@ class Config extends \PhpCsFixer\Config
 	/**
 	 * @param array<string,mixed> $rules
 	 *
-	 * @return $this
+	 * @return static
 	 */
-	public function replaceRules(array $rules)
+	public function replaceRules(array $rules) : static
 	{
 		$this->setRules(\array_replace_recursive($this->getRules(), $rules));
 		return $this;
 	}
 
-	/**
-	 * @param string $header
-	 *
-	 * @return $this
-	 */
-	public function setHeaderComment(string $header)
+	public function setHeaderComment(string $header) : static
 	{
 		$this->replaceRules([
 			'header_comment' => [
@@ -305,13 +300,10 @@ class Config extends \PhpCsFixer\Config
 		return $this;
 	}
 
-	/**
-	 * @return $this
-	 */
 	public function setDefaultHeaderComment(
 		string $packageName,
 		string $copyright = 'Natan Felles <natanfelles@gmail.com>'
-	) {
+	) : static {
 		$header = <<<EOF
 			This file is part of {$packageName}.
 			
