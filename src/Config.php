@@ -85,11 +85,12 @@ class Config extends \PhpCsFixer\Config
 			'function_to_constant' => true,
 			'function_typehint_space' => true,
 			'general_phpdoc_annotation_remove' => [],
-			/*'header_comment'                   => [
-				 'commentType' => 'comment',
-				 'header'      => $header,
-				 'location'    => 'after_open',
-			 ],*/
+			'header_comment' => [
+				'comment_type' => 'comment',
+				'header' => '',
+				'location' => 'after_declare_strict',
+				'separate' => 'none',
+			 ],
 			'heredoc_indentation' => true,
 			'heredoc_to_nowdoc' => true,
 			'implode_call' => false,
@@ -289,9 +290,7 @@ class Config extends \PhpCsFixer\Config
 	{
 		$this->replaceRules([
 			'header_comment' => [
-				'commentType' => 'comment',
 				'header' => $header,
-				'location' => 'after_open',
 			],
 		]);
 		return $this;
@@ -300,11 +299,17 @@ class Config extends \PhpCsFixer\Config
 	/**
 	 * @return $this
 	 */
-	public function setDefaultHeaderComment()
-	{
-		$year = \date('Y');
+	public function setDefaultHeaderComment(
+		string $packageName,
+		string $copyright = 'Natan Felles <natanfelles@gmail.com>'
+	) {
 		$header = <<<EOF
-			Copyright (C) 2018-{$year} Natan Felles <natanfelles@gmail.com>
+			This file is part of {$packageName}.
+			
+			(c) {$copyright}
+			
+			For the full copyright and license information, please view the LICENSE
+			file that was distributed with this source code.
 			EOF;
 		$this->setHeaderComment($header);
 		return $this;

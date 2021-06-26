@@ -22,8 +22,9 @@ class ConfigTest extends TestCase
 
 	public function testHeaderComment() : void
 	{
-		$this->assertTrue(
-			empty($this->config->getRules()['header_comment']['header'])
+		$this->assertSame(
+			'',
+			$this->config->getRules()['header_comment']['header']
 		);
 		$this->config->setHeaderComment('ABC');
 		$this->assertSame(
@@ -34,8 +35,10 @@ class ConfigTest extends TestCase
 
 	public function testDefaultHeaderComment() : void
 	{
-		$this->assertArrayNotHasKey('header_comment', $this->config->getRules());
-		$this->config->setDefaultHeaderComment();
-		$this->assertArrayHasKey('header_comment', $this->config->getRules());
+		$this->config->setDefaultHeaderComment('Foo Bar');
+		$this->assertStringContainsString(
+			'Foo Bar',
+			$this->config->getRules()['header_comment']['header']
+		);
 	}
 }
