@@ -96,7 +96,7 @@ class Config extends \PhpCsFixer\Config
 			'general_phpdoc_annotation_remove' => [],
 			'header_comment' => [
 				'comment_type' => 'comment',
-				'header' => '',
+				'header' => null,
 				'location' => 'after_declare_strict',
 				'separate' => 'none',
 			 ],

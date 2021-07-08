@@ -31,8 +31,7 @@ class ConfigTest extends TestCase
 
 	public function testHeaderComment() : void
 	{
-		$this->assertSame(
-			'',
+		$this->assertNull(
 			$this->config->getRules()['header_comment']['header']
 		);
 		$this->config->setHeaderComment('ABC');
