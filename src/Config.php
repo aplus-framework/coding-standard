@@ -94,12 +94,12 @@ class Config extends \PhpCsFixer\Config
 			'function_to_constant' => true,
 			'function_typehint_space' => true,
 			'general_phpdoc_annotation_remove' => [],
-			'header_comment' => [
+			/*'header_comment' => [
 				'comment_type' => 'comment',
-				'header' => null,
+				'header' => '',
 				'location' => 'after_declare_strict',
 				'separate' => 'none',
-			 ],
+			 ],*/
 			'heredoc_indentation' => true,
 			'heredoc_to_nowdoc' => true,
 			'implode_call' => false,
@@ -294,7 +294,10 @@ class Config extends \PhpCsFixer\Config
 	{
 		$this->replaceRules([
 			'header_comment' => [
+				'comment_type' => 'comment',
 				'header' => $header,
+				'location' => 'after_declare_strict',
+				'separate' => 'none',
 			],
 		]);
 		return $this;
