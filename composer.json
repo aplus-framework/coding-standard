@@ -1,52 +1,52 @@
 {
-	"name": "natanfelles/coding-standard",
-	"type": "library",
-	"description": "The Framework Coding Standard Library",
-	"keywords": [
-		"coding-standard"
-	],
-	"homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Natan Felles",
-			"email": "natanfelles@gmail.com",
-			"homepage": "https://natanfelles.github.io"
-		}
-	],
-	"require": {
-		"php": ">=8.0",
-		"friendsofphp/php-cs-fixer": "^2.19"
-	},
-	"require-dev": {
-		"ext-xdebug": "*",
-		"ergebnis/composer-normalize": "^2.15",
-		"phpmd/phpmd": "^2.10",
-		"phpstan/phpstan": "^0.12",
-		"phpunit/phpunit": "^9.5"
-	},
-	"config": {
-		"optimize-autoloader": true,
-		"preferred-install": "dist",
-		"sort-packages": true
-	},
-	"autoload": {
-		"psr-4": {
-			"Framework\\CodingStandard\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\CodingStandard\\": "tests/"
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"support": {
-		"email": "natanfelles@gmail.com",
-		"issues": "https://gitlab.com/the-framework/libraries/coding-standard/issues",
-		"wiki": "https://gitlab.com/the-framework/libraries/coding-standard/wikis/home",
-		"source": "https://gitlab.com/the-framework/libraries/coding-standard",
-		"docs": "https://the-framework.gitlab.io/libraries/coding-standard/docs/"
-	}
+    "name": "natanfelles/coding-standard",
+    "type": "library",
+    "description": "The Framework Coding Standard Library",
+    "keywords": [
+        "coding-standard"
+    ],
+    "homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "friendsofphp/php-cs-fixer": "^2.19"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "ergebnis/composer-normalize": "^2.15",
+        "phpmd/phpmd": "^2.10",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Framework\\CodingStandard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\CodingStandard\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "email": "natanfelles@gmail.com",
+        "issues": "https://gitlab.com/the-framework/libraries/coding-standard/issues",
+        "wiki": "https://gitlab.com/the-framework/libraries/coding-standard/wikis/home",
+        "source": "https://gitlab.com/the-framework/libraries/coding-standard",
+        "docs": "https://the-framework.gitlab.io/libraries/coding-standard/docs/"
+    }
 }
