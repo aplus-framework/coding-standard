@@ -3,7 +3,10 @@
     "type": "library",
     "description": "The Framework Coding Standard Library",
     "keywords": [
-        "coding-standard"
+        "coding-standard",
+        "cs",
+        "cs-fixer",
+        "php-cs-fixer"
     ],
     "homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
     "license": "MIT",
