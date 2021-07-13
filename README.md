@@ -1,4 +1,4 @@
-# The Framework Coding Standard Library
+# Aplus Framework Coding Standard Library
 
 - [Homepage](https://the-framework.gitlab.io/libraries/coding-standard.html)
 - [API Documentation](https://the-framework.gitlab.io/libraries/coding-standard/docs/)
