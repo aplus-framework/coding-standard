@@ -1,14 +1,14 @@
 {
-    "name": "natanfelles/coding-standard",
+    "name": "aplus/coding-standard",
     "type": "library",
-    "description": "The Framework Coding Standard Library",
+    "description": "Aplus Framework Coding Standard Library",
     "keywords": [
         "coding-standard",
         "cs",
         "cs-fixer",
         "php-cs-fixer"
     ],
-    "homepage": "https://the-framework.gitlab.io/libraries/coding-standard.html",
+    "homepage": "https://aplus-framework.com/docs/coding-standard",
     "license": "MIT",
     "authors": [
         {
@@ -47,9 +47,9 @@
     "prefer-stable": true,
     "support": {
         "email": "natanfelles@gmail.com",
-        "issues": "https://gitlab.com/the-framework/libraries/coding-standard/issues",
-        "wiki": "https://gitlab.com/the-framework/libraries/coding-standard/wikis/home",
-        "source": "https://gitlab.com/the-framework/libraries/coding-standard",
-        "docs": "https://the-framework.gitlab.io/libraries/coding-standard/docs/"
+        "issues": "https://gitlab.com/aplus-framework/libraries/coding-standard/issues",
+        "wiki": "https://gitlab.com/aplus-framework/libraries/coding-standard/wikis/home",
+        "source": "https://gitlab.com/aplus-framework/libraries/coding-standard",
+        "docs": "https://aplus-framework.gitlab.io/libraries/coding-standard/docs/"
     }
 }
