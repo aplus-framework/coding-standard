@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of The Framework Coding Standard Library.
+ * This file is part of Aplus Framework Coding Standard Library.
  *
  * (c) Natan Felles <natanfelles@gmail.com>
  *
