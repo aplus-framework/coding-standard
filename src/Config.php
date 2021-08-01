@@ -130,6 +130,7 @@ class Config extends \PhpCsFixer\Config
             'native_constant_invocation' => true,
             'native_function_casing' => true,
             'native_function_invocation' => [
+                'include' => ['@internal'],
                 'scope' => 'namespaced',
                 'strict' => true,
             ],
