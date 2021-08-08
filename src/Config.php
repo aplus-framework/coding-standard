@@ -9,6 +9,11 @@
  */
 namespace Framework\CodingStandard;
 
+/**
+ * Class Config.
+ *
+ * @package coding-standard
+ */
 class Config extends \PhpCsFixer\Config
 {
     public function __construct(mixed ...$params)
@@ -221,7 +226,7 @@ class Config extends \PhpCsFixer\Config
             'phpdoc_no_access' => true,
             'phpdoc_no_alias_tag' => ['replacements' => ['type' => 'var', 'link' => 'see']],
             'phpdoc_no_empty_return' => false,
-            'phpdoc_no_package' => true,
+            'phpdoc_no_package' => false,
             'phpdoc_no_useless_inheritdoc' => true,
             'phpdoc_order' => true,
             'phpdoc_return_self_reference' => true,

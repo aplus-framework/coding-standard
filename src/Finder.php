@@ -9,6 +9,11 @@
  */
 namespace Framework\CodingStandard;
 
+/**
+ * Class Finder.
+ *
+ * @package coding-standard
+ */
 class Finder extends \PhpCsFixer\Finder
 {
     public function __construct()
