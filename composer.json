@@ -8,7 +8,7 @@
         "cs-fixer",
         "php-cs-fixer"
     ],
-    "homepage": "https://aplus-framework.com/docs/coding-standard",
+    "homepage": "https://docs.aplus-framework.com/guides/libraries/coding-standard/",
     "license": "MIT",
     "authors": [
         {
@@ -50,6 +50,6 @@
         "issues": "https://gitlab.com/aplus-framework/libraries/coding-standard/issues",
         "wiki": "https://gitlab.com/aplus-framework/libraries/coding-standard/wikis/home",
         "source": "https://gitlab.com/aplus-framework/libraries/coding-standard",
-        "docs": "https://aplus-framework.gitlab.io/libraries/coding-standard/docs/"
+        "docs": "https://docs.aplus-framework.com/guides/libraries/coding-standard/"
     }
 }
