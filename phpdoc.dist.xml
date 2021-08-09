@@ -16,7 +16,7 @@
             <source dsn=".">
                 <path>src</path>
             </source>
-            <default-package-name>CodingStandard</default-package-name>
+            <default-package-name>coding-standard</default-package-name>
             <include-source>true</include-source>
         </api>
         <guide>
