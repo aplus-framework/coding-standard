@@ -1,7 +1,6 @@
 # Aplus Framework Coding Standard Library
 
-- [Homepage](https://aplus-framework.com/docs/coding-standard)
-- [API Documentation](https://aplus-framework.gitlab.io/libraries/coding-standard/docs/)
+- [Documentation](https://docs.aplus-framework.com/guides/libraries/coding-standard/)
 
 [![Pipeline](https://gitlab.com/aplus-framework/libraries/coding-standard/badges/master/pipeline.svg)](https://gitlab.com/aplus-framework/libraries/coding-standard/-/pipelines?scope=branches)
 [![Coverage](https://gitlab.com/aplus-framework/libraries/coding-standard/badges/master/coverage.svg?job=test:php)](https://aplus-framework.gitlab.io/libraries/coding-standard/coverage/)
