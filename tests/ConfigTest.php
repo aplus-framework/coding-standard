@@ -44,9 +44,12 @@ class ConfigTest extends TestCase
     public function testDefaultHeaderComment() : void
     {
         $this->config->setDefaultHeaderComment('Foo Bar');
-        $this->assertStringContainsString(
-            'Foo Bar',
-            $this->config->getRules()['header_comment']['header']
-        );
+        $header = $this->config->getRules()['header_comment']['header'];
+        $this->assertStringContainsString('Foo Bar', $header);
+        $this->assertStringNotContainsString('(c)', $header);
+        $this->config->setDefaultHeaderComment('Bazz', 'Acme');
+        $header = $this->config->getRules()['header_comment']['header'];
+        $this->assertStringContainsString('Bazz', $header);
+        $this->assertStringContainsString('(c) Acme', $header);
     }
 }

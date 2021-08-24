@@ -311,13 +311,14 @@ class Config extends \PhpCsFixer\Config
 
     public function setDefaultHeaderComment(
         string $packageName,
-        string $copyright = 'Natan Felles <natanfelles@gmail.com>'
+        string $copyright = ''
     ) : static {
+        $copyrightLines = \PHP_EOL;
+        if ($copyright) {
+            $copyrightLines .= \PHP_EOL . '(c) ' . $copyright . \PHP_EOL;
+        }
         $header = <<<EOF
-            This file is part of {$packageName}.
-
-            (c) {$copyright}
-
+            This file is part of {$packageName}.{$copyrightLines}
             For the full copyright and license information, please view the LICENSE
             file that was distributed with this source code.
             EOF;
