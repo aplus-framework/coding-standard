@@ -72,6 +72,7 @@ class Config extends \PhpCsFixer\Config
             'declare_equal_normalize' => [
                 'space' => 'none',
             ],
+            'declare_parentheses' => true,
             'declare_strict_types' => false,
             'dir_constant' => true,
             'echo_tag_syntax' => [
