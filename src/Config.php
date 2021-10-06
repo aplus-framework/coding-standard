@@ -34,6 +34,7 @@ class Config extends \PhpCsFixer\Config
             'array_syntax' => [
                 'syntax' => 'short',
             ],
+            'assign_null_coalescing_to_coalesce_equal' => true,
             'binary_operator_spaces' => [
                 'default' => 'single_space',
             ],
@@ -52,6 +53,7 @@ class Config extends \PhpCsFixer\Config
             'class_attributes_separation' => [
                 'elements' => [
                     'method' => 'one',
+                    'trait_import' => 'none',
                 ],
             ],
             'class_definition' => [
@@ -79,6 +81,7 @@ class Config extends \PhpCsFixer\Config
                 'format' => 'short',
             ],
             'elseif' => true,
+            'empty_loop_condition' => true,
             'encoding' => true,
             'ereg_to_preg' => true,
             'error_suppression' => false,
@@ -127,6 +130,7 @@ class Config extends \PhpCsFixer\Config
                 'on_multiline' => 'ensure_fully_multiline',
             ],
             'method_chaining_indentation' => true,
+            'modernize_strpos' => true,
             'modernize_types_casting' => true,
             'multiline_comment_opening_closing' => true,
             'multiline_whitespace_before_semicolons' => [
@@ -165,7 +169,6 @@ class Config extends \PhpCsFixer\Config
                     'switch',
                     'throw',
                     'use',
-                    'use_trait',
                 ],
             ],
             'no_homoglyph_names' => false,
@@ -177,6 +180,7 @@ class Config extends \PhpCsFixer\Config
             'no_php4_constructor' => false,
             'no_short_bool_cast' => true,
             'no_singleline_whitespace_before_semicolons' => true,
+            'no_space_around_double_colon' => true,
             'no_spaces_after_function_name' => true,
             'no_spaces_around_offset' => true,
             'no_spaces_inside_parenthesis' => true,
