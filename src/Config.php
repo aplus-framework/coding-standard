@@ -317,9 +317,9 @@ class Config extends \PhpCsFixer\Config
         string $packageName,
         string $copyright = ''
     ) : static {
-        $copyrightLines = \PHP_EOL;
+        $copyrightLines = "\n";
         if ($copyright) {
-            $copyrightLines .= \PHP_EOL . '(c) ' . $copyright . \PHP_EOL;
+            $copyrightLines .= "\n" . '(c) ' . $copyright . "\n";
         }
         $header = <<<EOF
             This file is part of {$packageName}.{$copyrightLines}
