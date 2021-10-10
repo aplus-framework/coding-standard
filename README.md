@@ -1,3 +1,5 @@
+<a href="https://gitlab.com/aplus-framework/libraries/coding-standard"><img src="https://gitlab.com/aplus-framework/libraries/coding-standard/-/raw/master/guide/image.png" alt="Aplus Framework Coding Standard Library" align="right" width="100"></a>
+
 # Aplus Framework Coding Standard Library
 
 [![pipeline](https://gitlab.com/aplus-framework/libraries/coding-standard/badges/master/pipeline.svg)](https://gitlab.com/aplus-framework/libraries/coding-standard/-/pipelines?scope=branches)
