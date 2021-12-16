@@ -2,8 +2,9 @@
 
 # Aplus Framework Coding Standard Library
 
-- [Homepage](https://aplus-framework.com/packages/coding-standard)
+- [Home](https://aplus-framework.com/packages/coding-standard)
 
+[![tests](https://github.com/aplus-framework/coding-standard/actions/workflows/tests.yml/badge.svg)](https://github.com/aplus-framework/coding-standard/actions/workflows/tests.yml)
 [![pipeline](https://gitlab.com/aplus-framework/libraries/coding-standard/badges/master/pipeline.svg)](https://gitlab.com/aplus-framework/libraries/coding-standard/-/pipelines?scope=branches)
 [![coverage](https://gitlab.com/aplus-framework/libraries/coding-standard/badges/master/coverage.svg?job=test:php)](https://aplus-framework.gitlab.io/libraries/coding-standard/coverage/)
 [![packagist](https://img.shields.io/packagist/v/aplus/coding-standard)](https://packagist.org/packages/aplus/coding-standard)
