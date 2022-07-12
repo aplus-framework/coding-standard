@@ -42,6 +42,7 @@ class Config extends \PhpCsFixer\Config
             'blank_line_after_opening_tag' => false,
             'blank_line_before_statement' => false,
             'braces' => [
+                'allow_single_line_anonymous_class_with_empty_body' => false,
                 'allow_single_line_closure' => false,
                 'position_after_anonymous_constructs' => 'same',
                 'position_after_control_structures' => 'same',
@@ -316,7 +317,8 @@ class Config extends \PhpCsFixer\Config
     public function setDefaultHeaderComment(
         string $packageName,
         string $copyright = ''
-    ) : static {
+    ) : static
+    {
         $copyrightLines = "\n";
         if ($copyright) {
             $copyrightLines .= "\n" . '(c) ' . $copyright . "\n";
