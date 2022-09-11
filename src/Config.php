@@ -187,8 +187,7 @@ class Config extends \PhpCsFixer\Config
             'no_spaces_inside_parenthesis' => true,
             'no_superfluous_elseif' => true,
             'no_superfluous_phpdoc_tags' => false,
-            'no_trailing_comma_in_list_call' => true,
-            'no_trailing_comma_in_singleline_array' => true,
+            'no_trailing_comma_in_singleline' => true,
             'no_trailing_whitespace' => true,
             'no_trailing_whitespace_in_comment' => true,
             'no_unneeded_control_parentheses' => true,
@@ -285,7 +284,9 @@ class Config extends \PhpCsFixer\Config
             'unary_operator_spaces' => true,
             'visibility_required' => true,
             'void_return' => true,
-            'whitespace_after_comma_in_array' => true,
+            'whitespace_after_comma_in_array' => [
+                'ensure_single_space' => true,
+            ],
             'yoda_style' => false,
         ]);
     }
@@ -317,8 +318,7 @@ class Config extends \PhpCsFixer\Config
     public function setDefaultHeaderComment(
         string $packageName,
         string $copyright = ''
-    ) : static
-    {
+    ) : static {
         $copyrightLines = "\n";
         if ($copyright) {
             $copyrightLines .= "\n" . '(c) ' . $copyright . "\n";
