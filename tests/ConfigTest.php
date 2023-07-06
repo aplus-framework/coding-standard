@@ -37,6 +37,7 @@ class ConfigTest extends TestCase
         $this->config->setHeaderComment('ABC');
         $this->assertSame(
             'ABC',
+            // @phpstan-ignore-next-line
             $this->config->getRules()['header_comment']['header']
         );
     }
@@ -44,10 +45,12 @@ class ConfigTest extends TestCase
     public function testDefaultHeaderComment() : void
     {
         $this->config->setDefaultHeaderComment('Foo Bar');
+        // @phpstan-ignore-next-line
         $header = $this->config->getRules()['header_comment']['header'];
         $this->assertStringContainsString('Foo Bar', $header);
         $this->assertStringNotContainsString('(c)', $header);
         $this->config->setDefaultHeaderComment('Bazz', 'Acme');
+        // @phpstan-ignore-next-line
         $header = $this->config->getRules()['header_comment']['header'];
         $this->assertStringContainsString('Bazz', $header);
         $this->assertStringContainsString('(c) Acme', $header);
