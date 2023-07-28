@@ -19,9 +19,9 @@
     "homepage": "https://aplus-framework.com/packages/coding-standard",
     "support": {
         "email": "support@aplus-framework.com",
-        "issues": "https://gitlab.com/aplus-framework/libraries/coding-standard/issues",
+        "issues": "https://github.com/aplus-framework/coding-standard/issues",
         "forum": "https://aplus-framework.com/forum",
-        "source": "https://gitlab.com/aplus-framework/libraries/coding-standard",
+        "source": "https://github.com/aplus-framework/coding-standard",
         "docs": "https://docs.aplus-framework.com/guides/libraries/coding-standard/"
     },
     "funding": [
