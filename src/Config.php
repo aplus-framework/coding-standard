@@ -317,6 +317,10 @@ class Config extends \PhpCsFixer\Config
         return $this;
     }
 
+    /**
+     * @param string $packageName
+     * @param array<string>|string $copyright
+     */
     public function setDefaultHeaderComment(
         string $packageName,
         array | string $copyright = []
