@@ -183,7 +183,6 @@ class Config extends \PhpCsFixer\Config
             'no_space_around_double_colon' => true,
             'no_spaces_after_function_name' => true,
             'no_spaces_around_offset' => true,
-            'no_spaces_inside_parenthesis' => true,
             'no_superfluous_elseif' => true,
             'no_superfluous_phpdoc_tags' => false,
             'no_trailing_comma_in_singleline' => true,
@@ -268,6 +267,9 @@ class Config extends \PhpCsFixer\Config
             'single_quote' => true,
             'single_space_around_construct' => true,
             'space_after_semicolon' => true,
+            'spaces_inside_parentheses' => [
+                'space' => 'none',
+            ],
             'standardize_increment' => true,
             'standardize_not_equals' => true,
             'static_lambda' => true,
