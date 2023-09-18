@@ -16,6 +16,6 @@ class FinderTest extends TestCase
 {
     public function testInstance() : void
     {
-        $this->assertInstanceOf(Finder::class, Finder::create());
+        self::assertInstanceOf(Finder::class, Finder::create());
     }
 }

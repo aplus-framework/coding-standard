@@ -23,7 +23,7 @@ class ConfigTest extends TestCase
 
     public function testCustomRules() : void
     {
-        $this->assertContainsEquals(
+        self::assertContainsEquals(
             ['array_indentation' => false],
             $this->config->getRules()
         );
@@ -31,11 +31,11 @@ class ConfigTest extends TestCase
 
     public function testHeaderComment() : void
     {
-        $this->assertFalse(
+        self::assertFalse(
             isset($this->config->getRules()['header_comment'])
         );
         $this->config->setHeaderComment('ABC');
-        $this->assertSame(
+        self::assertSame(
             'ABC',
             // @phpstan-ignore-next-line
             $this->config->getRules()['header_comment']['header']
@@ -47,12 +47,12 @@ class ConfigTest extends TestCase
         $this->config->setDefaultHeaderComment('Foo Bar');
         // @phpstan-ignore-next-line
         $header = $this->config->getRules()['header_comment']['header'];
-        $this->assertStringContainsString('Foo Bar', $header);
-        $this->assertStringNotContainsString('(c)', $header);
+        self::assertStringContainsString('Foo Bar', $header);
+        self::assertStringNotContainsString('(c)', $header);
         $this->config->setDefaultHeaderComment('Bazz', 'Acme');
         // @phpstan-ignore-next-line
         $header = $this->config->getRules()['header_comment']['header'];
-        $this->assertStringContainsString('Bazz', $header);
-        $this->assertStringContainsString('(c) Acme', $header);
+        self::assertStringContainsString('Bazz', $header);
+        self::assertStringContainsString('(c) Acme', $header);
     }
 }
