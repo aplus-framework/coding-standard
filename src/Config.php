@@ -202,7 +202,7 @@ class Config extends \PhpCsFixer\Config
             'no_whitespace_in_blank_line' => true,
             'non_printable_character' => true,
             'normalize_index_brace' => true,
-            'not_operator_with_space' => true,
+            'not_operator_with_space' => false,
             'not_operator_with_successor_space' => false,
             'object_operator_without_whitespace' => true,
             'ordered_class_elements' => [
