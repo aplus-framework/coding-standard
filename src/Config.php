@@ -319,11 +319,15 @@ class Config extends \PhpCsFixer\Config
 
     public function setDefaultHeaderComment(
         string $packageName,
-        string $copyright = ''
+        array | string $copyright = []
     ) : static {
+        $copyright = (array) $copyright;
         $copyrightLines = "\n";
         if ($copyright) {
-            $copyrightLines .= "\n" . '(c) ' . $copyright . "\n";
+            $copyrightLines .= "\n";
+            foreach ($copyright as $cr) {
+                $copyrightLines .= '(c) ' . $cr . "\n";
+            }
         }
         $header = <<<EOF
             This file is part of {$packageName}.{$copyrightLines}
