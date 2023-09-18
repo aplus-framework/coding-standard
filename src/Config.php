@@ -42,8 +42,8 @@ class Config extends \PhpCsFixer\Config
             'blank_line_after_opening_tag' => false,
             'blank_line_before_statement' => false,
             'blank_lines_before_namespace' => [
-                'min_line_breaks' => 0,
-                'max_line_breaks' => 0,
+                'min_line_breaks' => 1,
+                'max_line_breaks' => 1,
             ],
             'cast_spaces' => [
                 'space' => 'single',
