@@ -12,7 +12,7 @@ namespace Tests\CodingStandard;
 use Framework\CodingStandard\Finder;
 use PHPUnit\Framework\TestCase;
 
-class FinderTest extends TestCase
+final class FinderTest extends TestCase
 {
     public function testInstance() : void
     {
