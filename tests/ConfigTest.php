@@ -49,6 +49,11 @@ final class ConfigTest extends TestCase
         $header = $this->config->getRules()['header_comment']['header'];
         self::assertStringContainsString('Foo Bar', $header);
         self::assertStringNotContainsString('(c)', $header);
+        $this->config->setDefaultHeaderComment('Foo Bar', '');
+        // @phpstan-ignore-next-line
+        $header = $this->config->getRules()['header_comment']['header'];
+        self::assertStringContainsString('Foo Bar', $header);
+        self::assertStringNotContainsString('(c)', $header);
         $this->config->setDefaultHeaderComment('Bazz', 'Acme');
         // @phpstan-ignore-next-line
         $header = $this->config->getRules()['header_comment']['header'];

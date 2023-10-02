@@ -325,6 +325,9 @@ class Config extends \PhpCsFixer\Config
         string $packageName,
         array | string $copyright = []
     ) : static {
+        if ($copyright === '') {
+            $copyright = [];
+        }
         $copyright = (array) $copyright;
         $copyrightLines = "\n";
         if ($copyright) {
