@@ -48,7 +48,7 @@ jobs:
           vendor/bin/phpstan analyse -vvv
 
       - name: PHPUnit
-        run: vendor/bin/phpunit --verbose
+        run: vendor/bin/phpunit
 
       - name: Upload coverage results to Coveralls
         env:
@@ -88,4 +88,4 @@ jobs:
           vendor/bin/php-cs-fixer fix --diff --dry-run --verbose
 
       - name: PHPUnit
-        run: vendor/bin/phpunit --verbose
+        run: vendor/bin/phpunit
