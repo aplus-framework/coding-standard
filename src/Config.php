@@ -207,6 +207,7 @@ class Config extends \PhpCsFixer\Config
             'ordered_class_elements' => [
                 'order' => [
                     'use_trait',
+                    'case',
                     'constant',
                     'property',
                     'construct',
