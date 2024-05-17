@@ -86,11 +86,6 @@ class Config extends \PhpCsFixer\Config
             'encoding' => true,
             'ereg_to_preg' => true,
             'error_suppression' => false,
-            'escape_implicit_backslashes' => [
-                'double_quoted' => true,
-                'heredoc_syntax' => true,
-                'single_quoted' => false,
-            ],
             'explicit_indirect_variable' => true,
             'explicit_string_variable' => true,
             'final_internal_class' => false,
@@ -101,7 +96,10 @@ class Config extends \PhpCsFixer\Config
                 'closure_function_spacing' => 'one',
             ],
             'function_to_constant' => true,
-            'general_phpdoc_annotation_remove' => [],
+            'general_phpdoc_annotation_remove' => [
+                'annotations' => [],
+                'case_sensitive' => true,
+            ],
             /*'header_comment' => [
                 'comment_type' => 'comment',
                 'header' => '',
@@ -275,6 +273,11 @@ class Config extends \PhpCsFixer\Config
             'standardize_not_equals' => true,
             'static_lambda' => true,
             'strict_comparison' => true,
+            'string_implicit_backslashes' => [
+                'double_quoted' => 'escape',
+                'heredoc' => 'escape',
+                'single_quoted' => 'unescape',
+            ],
             'strict_param' => false,
             'string_line_ending' => true,
             'switch_case_semicolon_to_colon' => true,
