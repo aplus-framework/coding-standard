@@ -289,6 +289,7 @@ class Config extends \PhpCsFixer\Config
             'trailing_comma_in_multiline' => ['elements' => ['arrays']],
             'trim_array_spaces' => true,
             'type_declaration_spaces' => ['elements' => ['function', 'property']],
+            'types_spaces' => ['space' => 'single'],
             'unary_operator_spaces' => true,
             'visibility_required' => true,
             'void_return' => true,
