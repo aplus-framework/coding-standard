@@ -246,6 +246,7 @@ class Config extends \PhpCsFixer\Config
             'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types' => true,
             'phpdoc_types_order' => [
+                'case_sensitive' => true,
                 'null_adjustment' => 'always_last',
                 'sort_algorithm' => 'alpha',
             ],
