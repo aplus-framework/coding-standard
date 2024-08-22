@@ -219,6 +219,10 @@ class Config extends \PhpCsFixer\Config
                 'sort_algorithm' => 'none',
             ],
             'ordered_imports' => true,
+            'ordered_types' => [
+                'case_sensitive' => true,
+                'null_adjustment' => 'always_last',
+            ],
             'php_unit_construct' => true,
             'phpdoc_add_missing_param_annotation' => true,
             'phpdoc_align' => false,
