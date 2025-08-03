@@ -271,7 +271,9 @@ class Config extends \PhpCsFixer\Config
             'single_line_after_imports' => true,
             'single_line_comment_style' => true,
             'single_quote' => true,
-            'single_space_around_construct' => true,
+            'single_space_around_construct' => [
+                'constructs_followed_by_a_single_space' => ['echo', 'new', 'throw'],
+            ],
             'space_after_semicolon' => true,
             'spaces_inside_parentheses' => [
                 'space' => 'none',
