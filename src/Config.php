@@ -298,7 +298,7 @@ class Config extends \PhpCsFixer\Config
             'type_declaration_spaces' => ['elements' => ['function', 'property']],
             'types_spaces' => ['space' => 'single'],
             'unary_operator_spaces' => true,
-            'visibility_required' => true,
+            'modifier_keywords' => true,
             'void_return' => true,
             'whitespace_after_comma_in_array' => [
                 'ensure_single_space' => true,
