@@ -334,6 +334,8 @@ class Config extends \PhpCsFixer\Config
     /**
      * @param string $packageName
      * @param array<string>|string $copyright
+     *
+     * @return static
      */
     public function setDefaultHeaderComment(
         string $packageName,
