@@ -45,7 +45,10 @@ class Config extends \PhpCsFixer\Config
                 'min_line_breaks' => 1,
                 'max_line_breaks' => 1,
             ],
-            'braces_position' => true,
+            'braces_position' => [
+                'anonymous_classes_opening_brace' => 'next_line_unless_newline_at_signature_end',
+                'anonymous_functions_opening_brace' => 'same_line',
+            ],
             'cast_spaces' => [
                 'space' => 'single',
             ],
