@@ -9,7 +9,7 @@
  */
 namespace Tests\CodingStandard;
 
-use Framework\CodingStandard\Finder;
+use Aplus\CodingStandard\Finder;
 use PHPUnit\Framework\TestCase;
 
 final class FinderTest extends TestCase

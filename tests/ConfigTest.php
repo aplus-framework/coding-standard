@@ -9,7 +9,7 @@
  */
 namespace Tests\CodingStandard;
 
-use Framework\CodingStandard\Config;
+use Aplus\CodingStandard\Config;
 use PHPUnit\Framework\TestCase;
 
 final class ConfigTest extends TestCase
