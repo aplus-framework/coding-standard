@@ -16,9 +16,9 @@ namespace Aplus\CodingStandard;
  */
 class Config extends \PhpCsFixer\Config
 {
-    public function __construct(mixed ...$params)
+    public function __construct(string $name = 'default')
     {
-        parent::__construct(...$params);
+        parent::__construct($name);
         $this->setRiskyAllowed(true);
         $this->setIndent('    ');
         $this->setLineEnding("\n");
